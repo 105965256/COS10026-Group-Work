@@ -8,25 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | CodeCrafters</title>
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .about-photo figcaption {
-            text-align: center;
-        }
-    </style>
 </head>
-<body>
 
+<body>
 <header class="site-header">
     <div class="container">
         <div class="hero-text">
             <p class="eyebrow">CodeCrafters Team Profile</p>
             <h1>Meet the team behind the project</h1>
-            <p class="hero-summary" style="max-width: 54rem;">
+            <p class="hero-summary">
                 This page introduces our group members, project contributions, shared class details, and the teamwork behind our G05 recruitment website.
             </p>
         </div>
-
+        
         <nav class="site-nav" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -38,7 +32,8 @@
     </div>
 </header>
 
-<main id="main-content" class="container page-main">
+<main id="main-content" class="container page-main" role="main">
+
     <section class="page-intro">
         <p class="section-tag">Group Information</p>
         <h2>CodeCrafters</h2>
@@ -81,10 +76,12 @@
             </div>
 
             <figure class="about-photo">
-                <div class="photo-placeholder" role="img" aria-label="Placeholder for the group photo to be added later.">
+                <div class="photo-placeholder" aria-hidden="true">
                     Group photo placeholder
                 </div>
-                <figcaption>Placeholder for the final group photo of all three members.</figcaption>
+                <figcaption>
+                    Group photo will be added here showing all CodeCrafters members.
+                </figcaption>
             </figure>
         </div>
     </section>
@@ -101,7 +98,7 @@
         </header>
 
         <dl class="member-contributions">
-            <dt>Zikun Pang <span class="student-id">105965214</span></dt>
+            <dt>Zikun Pang <span class="student-id"><abbr title="Student ID">105965214</abbr></span></dt>
             <dd>
                 Responsible for the <strong>index.html</strong> and <strong>apply.html</strong> pages, including the home page company presentation, search feature, merged-cell recruitment table, job application form structure, HTML5 validation rules, responsive layout, and accessibility support.
             </dd>
@@ -111,7 +108,7 @@
                 <em>English translation:</em> Details determine success, so every step should be built on a solid foundation.
             </dd>
 
-            <dt>Yunchen Xue <span class="student-id">105965256</span></dt>
+            <dt>Yunchen Xue <span class="student-id"><abbr title="Student ID">105965256</abbr></span></dt>
             <dd>
                 Responsible for the <strong>jobs.html</strong> page, including the job description structure, role summaries, responsibility lists, requirement sections, and supporting sidebar content for the recruitment website.
             </dd>
@@ -121,7 +118,7 @@
                 <em>English translation:</em> Only by taking steady steps can we reach farther horizons.
             </dd>
 
-            <dt>Ricky Jiang <span class="student-id">106108939</span></dt>
+            <dt>Ricky Jiang <span class="student-id"><abbr title="Student ID">106108939</abbr></span></dt>
             <dd>
                 Responsible for the <strong>about.html</strong> page refinement and shared visual presentation, including group profile content organisation, profile styling, and consistency across the team introduction sections.
             </dd>
@@ -171,26 +168,38 @@
                 <tr>
                     <th scope="row">Ricky Jiang</th>
                     <td>Full-stack engineer working on user-focused web products</td>
-                    <td>Latiao and milk tea</td>
-                    <td>To be added</td>
+                    <td>Shapes</td>
+                    <td>Shanghai</td>
                 </tr>
                 </tbody>
             </table>
         </div>
     </section>
+
 </main>
 
 <footer class="site-footer">
     <div class="container footer-layout">
         <div>
-            <p>&copy; 2026 ShopSphere</p>
-            <p><a href="mailto:info@shopsphere.com">info@shopsphere.com</a></p>
+            <p>&copy; 2026 CodeCrafters</p>
+            <p><a href="mailto:info@codecrafters.com" aria-label="Email CodeCrafters">info@codecrafters.com</a></p>
         </div>
         <div class="footer-links">
-            <p><a href="https://2568879251l.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiOWZjY2I1NWI1YzJlNGUzNWI2YWQ5MjZhNTBlOTJiNDIiLCJwIjoiaiJ9">Jira Project Link</a></p>
-            <p><a href="https://github.com/105965256/COS10026-Group-Work">GitHub Repository Link</a></p>
+            <p>
+                <a href="https://2568879251l.atlassian.net/jira/software/projects/SCRUM/boards/1"
+                   target="_blank" rel="noopener noreferrer">
+                   Jira Project Link
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/105965256/COS10026-Group-Work"
+                   target="_blank" rel="noopener noreferrer">
+                   GitHub Repository Link
+                </a>
+            </p>
         </div>
     </div>
 </footer>
+
 </body>
 </html>
