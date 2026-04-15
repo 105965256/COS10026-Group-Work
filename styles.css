@@ -14,33 +14,27 @@
     --color-surface-highlight: #edf5ff;
     --color-border: #d9e4ef;
     --color-border-soft: #e1eaf2;
-    --color-focus: #ffbf47;
     --color-header-start: #123d7a;
     --color-header-mid: #1959a6;
     --color-header-end: #2b78d0;
     --color-header-text: #ffffff;
     --color-header-text-soft: #e7f1ff;
     --color-header-text-muted: #cfe4ff;
-    --shadow-card: 0 10px 24px rgba(16, 42, 67, 0.05);
     --radius-pill: 999px;
     --radius-lg: 1rem;
     --radius-md: 0.8rem;
 }
-
 
 /*Basic container limitations*/
 * {
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--color-text);
     background: linear-gradient(180deg, #f4f7fb 0%, #eef4fb 100%);
 }
@@ -51,11 +45,6 @@ a {
 
 a:hover {
     color: var(--color-primary-dark);
-}
-
-a:focus {
-    outline: 3px solid var(--color-focus);
-    outline-offset: 2px;
 }
 
 /* General Layout*/
@@ -70,12 +59,12 @@ a:focus {
 }
 
 .page-intro {
-    max-width: 54rem;
+    max-width: 55rem;
     margin-bottom: 2rem;
 }
 
 .page-intro h2 {
-    margin: 0.3rem 0 0.8rem;
+    margin: 0.5rem 0 1rem;
     font-size: 2rem;
     color: var(--color-heading-strong);
 }
@@ -83,10 +72,6 @@ a:focus {
 .page-intro p {
     margin: 0;
     color: var(--color-text-soft);
-}
-
-.page-with-sidebar {
-    overflow: hidden;
 }
 
 .page-content {
@@ -105,24 +90,22 @@ a:focus {
 .section-tag,
 .eyebrow,
 .card-tag {
-    font-size: 0.82rem;
+    font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
 }
 
 /*Top of page*/
 .site-header {
-    padding: 3rem 0 1.6rem;
+    padding: 3rem 0 1.5rem;
     color: var(--color-header-text);
     background:
-        radial-gradient(circle at top right, rgba(255, 255, 255, 0.18), transparent 28%),
-        linear-gradient(135deg, var(--color-header-start) 0%, var(--color-header-mid) 52%, var(--color-header-end) 100%);
+        linear-gradient(135deg, var(--color-header-start) 0%, var(--color-header-mid) 50%, var(--color-header-end) 100%);
 }
 
 .hero-text h1 {
     margin: 0.2rem 0 0.8rem;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     line-height: 1.2;
 }
 
@@ -138,7 +121,7 @@ a:focus {
 
 /*Navigation bar*/
 .site-nav {
-    margin-top: 1.6rem;
+    margin-top: 1.5rem;
 }
 
 .site-nav ul {
@@ -149,13 +132,13 @@ a:focus {
 
 .site-nav li {
     display: inline-block;
-    margin: 0.3rem 0.45rem 0.3rem 0;
+    margin: 0.3rem 0.45rem 1rem 0;
 }
 
 .site-nav a {
     display: inline-block;
-    padding: 0.72rem 1.1rem;
-    border: 1px solid rgba(255, 255, 255, 0.55);
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: var(--radius-pill);
     background: rgba(255, 255, 255, 0.1);
     color: var(--color-header-text);
@@ -168,9 +151,8 @@ a:focus {
     color: #0f3d75;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-    background: rgba(255, 255, 255, 0.22);
+.site-nav a:hover{
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Shared card containers */
@@ -184,8 +166,7 @@ a:focus {
 .content-card,
 .sidebar-card {
     margin-bottom: 1.5rem;
-    padding: 1.4rem;
-    box-shadow: var(--shadow-card);
+    padding: 1.5rem;
 }
 
 .content-card h2,
@@ -207,13 +188,13 @@ a:focus {
 
 .card-header {
     overflow: hidden;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #e8eff6;
 }
 
 .card-header h2 {
-    margin: 0.2rem 0 0.5rem;
+    margin: 0.1rem 0 0.5rem;
     font-size: 1.6rem;
     color: var(--color-heading-strong);
 }
@@ -225,7 +206,7 @@ a:focus {
 
 .card-summary {
     margin: 0;
-    max-width: 42rem;
+    max-width: 30rem;
 }
 
 /* Shared information panels */
@@ -248,7 +229,7 @@ a:focus {
 
 .info-panel h3 {
     margin-top: 0;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 
 .info-panel ol,
@@ -260,7 +241,7 @@ a:focus {
 
 .info-panel li,
 .sidebar-card li {
-    margin-bottom: 0.45rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Jobs page special sections */
