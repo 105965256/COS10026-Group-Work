@@ -97,6 +97,9 @@ a:focus {
 .page-sidebar {
     float: right;
     width: 25%;
+    margin-left: 2%;
+    padding: 0.25rem;
+    border: 1px solid #d9e4ef;
 }
 
 .section-tag,
@@ -740,19 +743,15 @@ a:focus {
 .footer-layout {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 /* Footer layout */
 .site-footer {
-    clear: both;
     padding: 1rem 0;
     background: var(--color-heading-strong);
     color: var(--color-header-text);
-}
-
-.footer-layout {
-    justify-content: space-between;
-    gap: 1rem;
 }
 
 .footer-links p,
@@ -842,4 +841,9 @@ a:focus {
     .page-intro h2 {
         font-size: 1.6rem;
     }
+
+
+.home-search {
+    margin-top: 1rem;
+}
 }
