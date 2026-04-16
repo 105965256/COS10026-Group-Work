@@ -74,6 +74,10 @@ a:hover {
     color: var(--color-text-soft);
 }
 
+.page-with-sidebar {
+    overflow: hidden;
+}
+
 .page-content {
     float: left;
     width: 73%;
